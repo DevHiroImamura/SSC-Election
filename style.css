@@ -20,12 +20,14 @@ h4,h5{
   font-family: "Roboto", sans-serif;
   font-weight: 530;
   font-style: normal;
+  margin: auto;
 }
 li{
   text-align: left;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: normal;
+  margin: auto;
 }
 .bottom{
   padding-bottom: 80px;
@@ -85,6 +87,12 @@ li{
       width: 10% !important;
   }
 }
+@media (max-width: 768px) {
+  li {
+    margin-right: 20px; /* adjust this value as needed */
+  }
+}
+
 
 .flex-container {
   display: flex;
