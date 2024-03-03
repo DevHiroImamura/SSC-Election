@@ -1,0 +1,114 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1{
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+h2{
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+h4,h5{
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 530;
+  font-style: normal;
+}
+li{
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.bottom{
+  padding-bottom: 80px;
+}
+.u-text-1 {
+  background-color: #012160;
+  color: #ffde00;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0; 
+  width: 100%; 
+}
+.u-text-2 {
+  background-color: #ffde00;
+  color: #012160;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  width: 100%; 
+}
+.u-text-3 {
+  background-color: white;
+  color: black;
+  text-align: center;
+  width: 100%; 
+}
+.u-image-1 {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#sec-dc29 {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+}
+#sec-dc29 .u-image-2, #sec-dc29 .u-image-3, #sec-dc29 .u-image-4 {
+  width: 22% !important;
+  height: auto !important;
+  margin: 1em !important;
+}
+@media (min-width: 600px) {
+  #sec-dc29 .u-image-2, #sec-dc29 .u-image-3, #sec-dc29 .u-image-4 {
+      width: 20% !important;
+  }
+}
+@media (min-width: 900px) {
+  #sec-dc29 .u-image-2, #sec-dc29 .u-image-3, #sec-dc29 .u-image-4 {
+      width: 15% !important;
+  }
+}
+@media (min-width: 1200px) {
+  #sec-dc29 .u-image-2, #sec-dc29 .u-image-3, #sec-dc29 .u-image-4 {
+      width: 10% !important;
+  }
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-container > div {
+  padding: 10px;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .flex-container {
+      flex-direction: row;
+      justify-content: center;
+  }
+}
+.content {
+  text-align: center;
+  padding-top: 50px;
+  width: 100%;
+}
+footer{
+  text-align: center;
+  display: block;
+  padding-top: 10px;
+}
