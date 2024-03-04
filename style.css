@@ -15,12 +15,21 @@ h2{
   font-weight: 700;
   font-style: normal;
 }
-h4,h5{
+h5{
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-weight: 530;
   font-style: normal;
   margin: auto;
+  font-size: 20px; 
+}
+h4{
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 530;
+  font-style: normal;
+  margin: auto;
+  font-size: 25px; 
 }
 li{
   text-align: left;
@@ -28,7 +37,9 @@ li{
   font-weight: 300;
   font-style: normal;
   margin: auto;
+  font-size: 25px; 
 }
+
 .bottom{
   padding-bottom: 80px;
 }
@@ -89,33 +100,56 @@ li{
 }
 @media (max-width: 768px) {
   li {
-    margin-right: 20px; /* adjust this value as needed */
+    margin-right: 20px;
+  }
+}
+@media print {
+  body, html, .flex-container {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    overflow: visible !important;
+  }
+  
+  /* This will ensure that colors are printed */
+  body {
+    -webkit-print-color-adjust: exact;
   }
 }
 
+
+.content {
+  flex: 1;
+  padding: 10px;
+  margin: 10px;
+}
+
+.text-left {
+  text-align: left;
+  flex: 1;
+  padding: 10px;
+}
 
 .flex-container {
   display: flex;
   flex-direction: column;
-}
-
-.flex-container > div {
-  padding: 10px;
+  background-color: #012160;
+  color: white;
   margin: auto;
+}
+.flex-container h2, .flex-container h5 {
+  text-align: left;
+  margin: 20px;
 }
 
 @media (min-width: 768px) {
   .flex-container {
-      flex-direction: row;
-      justify-content: center;
+    flex-direction: row;
+    justify-content: center;
   }
 }
-.content {
-  text-align: center;
-  padding-top: 50px;
-  width: 100%;
-}
-footer{
+
+footer {
   text-align: center;
   display: block;
   padding-top: 10px;
