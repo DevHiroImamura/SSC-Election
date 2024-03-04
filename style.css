@@ -71,6 +71,26 @@ li{
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+.img-button {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .img-button {
+    width: 80%; 
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .img-button {
+    width: 20%; 
+}
+}
+
 #sec-dc29 {
   display: flex !important;
   justify-content: center !important;
@@ -147,10 +167,4 @@ li{
     flex-direction: row;
     justify-content: center;
   }
-}
-
-footer {
-  text-align: center;
-  display: block;
-  padding-top: 10px;
 }
